@@ -61,3 +61,81 @@ let team2 = ['Valeria', 'Yesica', 'Camila'];
 let education = ['David', ...team1, ...team2];
 
 console.log(team1, team2, education);
+
+
+let name = 'Alejandro'
+let age = 21;
+// es5
+obj = { name: name, age: age}
+// es6 
+obj2 = {name, age}
+console.log(obj);
+console.log(obj2);
+
+
+let names = [
+    {name: 'Alejandro', age: 21},
+    {name: 'Yesica', age: 20}
+];
+
+let listOfNames = names.map(
+    function (item) {
+        console.log(item.name);
+    }
+);
+
+let listOfNames2 = names.map(item => console.log(item.name));
+
+
+const listOfNames3 = (name, age, country) => {
+    // ...
+}
+
+const listOfNames4 = name => {
+    // ...
+}
+
+const square = num => num * num;
+
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+    if (true){
+        resolve('Hey!');
+    } else {
+        reject('Ups!!')
+    }
+
+    })
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hola'))
+    .catch(error => console.log(error))
+
+
+class calculator{
+    constructor() {
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+    }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2, 2))
+
+// es6
+// import { hello } from './module';
+// hello();
+
+// es5
+const hello = require('./module.js');
+console.log(hello());
+
+
