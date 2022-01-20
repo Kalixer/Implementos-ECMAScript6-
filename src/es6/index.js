@@ -130,7 +130,7 @@ class calculator{
 const calc = new calculator();
 console.log(calc.sum(2, 2))
 
-// es6
+//jdq es6
 // import { hello } from './module';
 // hello();
 
