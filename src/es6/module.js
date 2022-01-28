@@ -1,10 +1,8 @@
 // es6
-// const hello = () => {
-//     return 'Hello'
-// }
-//
-// export default hello;
-
+const hello6 = () => {
+    return 'Hello'
+}
+export default hello6;
 
 // es5
 function hello() {

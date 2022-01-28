@@ -1,3 +1,6 @@
+// Default Params
+
+// es5
 function newFunction(name, age, country) {
     var name = name || 'Alejandro';
     var age = age || '21';
@@ -22,17 +25,18 @@ let world = "World";
 
 let epicPhrase = hello + ' ' + world;
 console.log(epicPhrase);
-// es6
 
+// es6
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
 
 
+// es5
 let lorem = "Esta es solo una frase ejemplo de conctenación \n"
 + "Y la frase es épica porque tiene esta continuación"
 console.log(lorem);
-// es6
 
+// es6
 let lorem2 = `Esta frase es más épica
 porque es más fácil concatenerla
 `;
@@ -60,7 +64,7 @@ let team2 = ['Valeria', 'Yesica', 'Camila'];
 
 let education = ['David', ...team1, ...team2];
 
-console.log(team1, team2, education);
+console.log(education);
 
 
 let name = 'Alejandro'
@@ -130,9 +134,9 @@ class calculator{
 const calc = new calculator();
 console.log(calc.sum(2, 2))
 
-//jdq es6
-// import { hello } from './module';
-// hello();
+// es6
+import { hello6 } from './module';
+hello6();
 
 // es5
 const hello = require('./module.js');
